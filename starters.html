@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+        <title>Starters</title>
+</head>
+
+<body>
+
+        <header>
+                <nav id="navbar">
+                        <h3><a href="index.html" class="text-decoration-none text-white">HGFood<small>s</small>.</a>
+                        </h3>
+                        <div id="nav-links" class="d-flex">
+                                <a href="index.html" class="nav-link">Home</a>
+                                <a href="index.html#foods" class="nav-link">Foods</a>
+                                <a href="contact.html" class="nav-link">Contact</a>
+                                <!-- <a href="about.html" class="nav-link">About</a> -->
+                        </div>
+                </nav>
+        </header>
+
+        <div class="container">
+                <div class="cart">
+                        <h5 class="p-1 pe-3">Cart : <span class="cartCount">0</span></h5>
+                        <button class="p-1 border-0 bg-light">
+                                <a class="text-decoration-none text-dark" href="order.html">GO TO CART</a>
+                        </button>
+                </div>
+                <div class="all_items">
+                        <h1>VEGs.</h1>
+                        <div class="veg-starter foods">
+                                <div class="item">
+                                        <img src="veg-manchuria-dry.jpg" alt="Veg-manchuria (dry)">
+                                        <h3 class="item-name">Veg manchuria (dry)</h3>
+                                        <div class="item-price">
+                                                <h4>PRICE ~ ₹ 150</h4>
+                                                <button onclick="callCard('VEG MANCHURIA / dry',150)" class="btn">GET IT
+                                                        NOW</button>
+                                        </div>
+                                </div>
+                                <div class="item">
+                                        <img src="veg-manchuria-wet.jpg" alt="Veg-manchuria (wet)">
+                                        <h3 class="item-name">Veg manchuria (wet)</h3>
+                                        <div class="item-price">
+                                                <h4>PRICE ~ ₹ 150</h4>
+                                                <button onclick="callCard('Veg manchuria / wet',150)" class="btn">GET IT
+                                                        NOW</button>
+                                        </div>
+                                </div>
+                                <div class="item">
+                                        <img src="chilly-baby-corn.jpg" alt=" Chilly Baby Corn">
+                                        <h3 class="item-name">Chilly Baby Corn</h3>
+                                        <div class="item-price">
+                                                <h4>PRICE ~ ₹ 150</h4>
+                                                <button onclick="callCard('Chilly Baby Corn',150)" class="btn">GET IT
+                                                        NOW</button>
+                                        </div>
+                                </div>
+                                <div class="item">
+                                        <img src="baby-corn-65.jpg" alt="babycorn65">
+                                        <h3 class="item-name">Baby Corn 65</h3>
+                                        <div class="item-price">
+                                                <h4>PRICE ~ ₹ 150</h4>
+                                                <button onclick="callCard('Baby Corn 65',150)" class="btn">GET IT
+                                                        NOW</button>
+                                        </div>
+                                </div>
+                                <div class="item">
+                                        <img src="crispy-corn.jpg" alt="crispycorn">
+                                        <h3 class="item-name">Crispy Corn</h3>
+                                        <div class="item-price">
+                                                <h4>PRICE ~ ₹ 150</h4>
+                                                <button onclick="callCard('Crispy Corn',150)" class="btn">GET IT
+                                                        NOW</button>
+                                        </div>
+                                </div>
+                                <div class="item">
+                                        <img src="paneer-tikka.jpg" alt="paneertikka">
+                                        <h3 class="item-name">Paneer Tikka</h3>
+                                        <div class="item-price">
+                                                <h4>PRICE ~ ₹ 150</h4>
+                                                <button onclick="callCard('Paneer Tikka',150)" class="btn">GET IT
+                                                        NOW</button>
+                                        </div>
+                                </div>
+                                <div class="item">
+                                        <img src="paneer-malai-tikka.jpg" alt="paneermalaitikka">
+                                        <h3 class="item-name">Paneer malai Tikka</h3>
+                                        <div class="item-price">
+                                                <h4>PRICE ~ ₹ 150</h4>
+                                                <button onclick="callCard('Paneer malai Tikka',150)" class="btn">GET IT
+                                                        NOW</button>
+                                        </div>
+                                </div>
+                                <div class="item">
+                                        <img src="paneer-65.jpg" alt="panner65">
+                                        <h3 class="item-name">Panner 65</h3>
+                                        <div class="item-price">
+                                                <h4>PRICE ~ ₹ 150</h4>
+                                                <button onclick="callCard('Panner 65',150)" class="btn">GET IT
+                                                        NOW</button>
+                                        </div>
+                                </div>
+                                <div class="item">
+                                        <img src="paneer-majestic.jpg" alt="paneermajectic">
+                                        <h3 class="item-name">Paneer majestic</h3>
+                                        <div class="item-price">
+                                                <h4>PRICE ~ ₹ 150</h4>
+                                                <button onclick="callCard('Paneer majestic',150)" class="btn">GET IT
+                                                        NOW</button>
+                                        </div>
+                                </div>
+                                <div class="item">
+                                        <img src="mushroom_65.jpg" alt="mushroom65">
+                                        <h3 class="item-name">Mushroom 65</h3>
+                                        <div class="item-price">
+                                                <h4>PRICE ~ ₹ 150</h4>
+                                                <button onclick="callCard('Mushroom 65',150)" class="btn">GET IT
+                                                        NOW</button>
+                                        </div>
+                                </div>
+                                <div class="item">
+                                        <img src="chilly-mushroom.jpg" alt="chillymushroom">
+                                        <h3 class="item-name">Chilly mushroom</h3>
+                                        <div class="item-price">
+                                                <h4>PRICE ~ ₹ 150</h4>
+                                                <button onclick="callCard('Chilly mushroom',150)" class="btn">GET IT
+                                                        NOW</button>
+                                        </div>
+                                </div>
+                        </div>
+                        <h1>NON VEGs.</h1>
+                        <div class="non-veg-starter foods">
+                                <div class="item">
+                                        <img src="chicken-wings.jpg" alt="chickenwings">
+                                        <h3 class="item-name">Chicken Wings</h3>
+                                        <div class="item-price">
+                                                <h4>PRICE ~ ₹ 150</h4>
+                                                <button onclick="callCard('Chicken Wings',150)" class="btn">GET IT
+                                                        NOW</button>
+                                        </div>
+                                </div>
+                                <div class="item">
+                                        <img src="chicken-manchuria.jpg" alt="chickenmachura">
+                                        <h3 class="item-name">Chicken Manchuria</h3>
+                                        <div class="item-price">
+                                                <h4>PRICE ~ ₹ 150</h4>
+                                                <button onclick="callCard('Chicken Manchuria',150)" class="btn">GET IT
+                                                        NOW</button>
+                                        </div>
+                                </div>
+                                <div class="item">
+                                        <img src="chicken-65.jpg" alt="Chichen 65">
+                                        <h3 class="item-name">Chichen 65</h3>
+                                        <div class="item-price">
+                                                <h4>PRICE ~ ₹ 150</h4>
+                                                <button onclick="callCard('Chichen 65',150)" class="btn">GET IT
+                                                        NOW</button>
+                                        </div>
+                                </div>
+                                <div class="item">
+                                        <img src="chicken-lollipop.jpg" alt=" Chichen Lollipop">
+                                        <h3 class="item-name">Chichen Lollipop</h3>
+                                        <div class="item-price">
+                                                <h4>PRICE ~ ₹ 150</h4>
+                                                <button onclick="callCard('Chichen Lollipop',150)" class="btn">GET IT
+                                                        NOW</button>
+                                        </div>
+                                </div>
+                                <div class="item">
+                                        <img src="pepper-chicken.jpg" alt="Pepper Chicken">
+                                        <h3 class="item-name">Pepper Chicken</h3>
+                                        <div class="item-price">
+                                                <h4>PRICE ~ ₹ 150</h4>
+                                                <button onclick="callCard('Pepper Chicken',150)" class="btn">GET IT
+                                                        NOW</button>
+                                        </div>
+                                </div>
+                                <div class="item">
+                                        <img src="prawns-shift.JPG" alt="Prowns fry">
+                                        <h3 class="item-name">Prowns fry</h3>
+                                        <div class="item-price">
+                                                <h4>PRICE ~ ₹ 150</h4>
+                                                <button onclick="callCard('Prowns fry',150)" class="btn">GET IT
+                                                        NOW</button>
+                                        </div>
+                                </div>
+                                <div class="item">
+                                        <img src="kaju-chicken-pakoda.jpg" alt="Kaju Chicken Pakoda">
+                                        <h3 class="item-name">Kaju Chicken Pakoda</h3>
+                                        <div class="item-price">
+                                                <h4>PRICE ~ ₹ 150</h4>
+                                                <button onclick="callCard('Kaju Chicken Pakoda',150)" class="btn">GET IT
+                                                        NOW</button>
+                                        </div>
+                                </div>
+                                <div class="item">
+                                        <img src="kalmi_kebab.jpg" alt="Kalmi Kabab">
+                                        <h3 class="item-name">Kalmi Kabab</h3>
+                                        <div class="item-price">
+                                                <h4>PRICE ~ ₹ 150</h4>
+                                                <button onclick="callCard('VEG MANCHURIA / dry',150)" class="btn">GET IT
+                                                        NOW</button>
+                                        </div>
+                                </div>
+                                <div class="item">
+                                        <img src="apollo-fish.jpg" alt="Apollo Fish">
+                                        <h3 class="item-name">Apollo Fish</h3>
+                                        <div class="item-price">
+                                                <h4>PRICE ~ ₹ 150</h4>
+                                                <button onclick="callCard('Apollo Fish',150)" class="btn">GET IT
+                                                        NOW</button>
+                                        </div>
+                                </div>
+                                <div class="item">
+                                        <img src="chilli-fish.jpg" alt="Chilli Fish">
+                                        <h3 class="item-name">Chilli Fish</h3>
+                                        <div class="item-price">
+                                                <h4>PRICE ~ ₹ 150</h4>
+                                                <button onclick="callCard('Chilli Fish',150)" class="btn">GET IT
+                                                        NOW</button>
+                                        </div>
+                                </div>
+                                <div class="item">
+                                        <img src="chicken-drumstics.jpg" alt="Chicken drumstic">
+                                        <h3 class="item-name">Chicken Drumstic</h3>
+                                        <div class="item-price">
+                                                <h4>PRICE ~ ₹ 150</h4>
+                                                <button onclick="callCard('Chicken Drumstic',150)" class="btn">GET IT
+                                                        NOW</button>
+                                        </div>
+                                </div>
+                                <div class="item">
+                                        <img src="chicken-tandoori.jpg" alt="chicken-tandoori">
+                                        <h3 class="item-name">Chicken Tandoori</h3>
+                                        <div class="item-price">
+                                                <h4>PRICE ~ ₹ 150</h4>
+                                                <button onclick="callCard('Chicken Tandoori',150)" class="btn">GET IT
+                                                        NOW</button>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+                <div id="price_card">
+                        <div id="price">
+                                <h1 class="card_heading">HGFoods.</h1>
+                                <br>
+                                <br>
+                                <h1>YOUR ORDER</h1>
+                                <br>
+                                <table class="table">
+                                        <tbody>
+                                                <tr>
+                                                        <th>ITEM</th>
+                                                        <td>:</td>
+                                                        <td id="ordered_item"></td>
+                                                </tr>
+                                                <tr>
+                                                        <th>PRICE in ₹</th>
+                                                        <td>:</td>
+                                                        <td id="price_item"></td>
+                                                </tr>
+                                                <tr>
+                                                        <th>QUANTITY</th>
+                                                        <td>:</td>
+                                                        <td><input class="input" type="number" id="quantity" min="1"
+                                                                        max="10" placeholder="ENTER THE QUANTITY" title="min=1, max=10"></td>
+                                                </tr>
+                                                <tr id="total_amount">
+                                                        <th>TOTAL</th>
+                                                        <td>:</td>
+                                                        <td id="total"></td>
+                                                </tr>
+                                        </tbody>
+                                </table>
+                                <div id="btn">
+                                        <button class="btn btn-light" onclick="goBack()">BACK</button>
+                                        <button class="btn btn-light" id="submit" onclick="conform()">CONFORM</button>
+                                </div>
+                        </div>
+                </div>
+        </div>
+        <footer class="footer">
+                <div class="footer_contact">
+                        <div class="footer_mail">
+                                <h3>Contact Us:</h3><br>
+                                <p>Email : gblvenkatesh@gmail.com 📧</p>
+                                <p>Phone No: 9999999999 📞</p>
+                        </div>
+                        <div class="social_media">
+                                <h3>Social Media :</h3>
+                                <div class="social_media_icons">
+                                        <a href="#"> <img src="instagram.svg" alt="instagram"></a>
+                                        <a href="#"><img src="facebook.svg" alt="facebook"></a>
+                                        <a href="#"> <img src="twitter.svg" alt="twitter"></a>
+                                        <a href="#"> <img src="youtube.svg" alt="youtube"></a>
+                                        <a href="#"> <img src="linkedin.svg" alt="linkedin"></a>
+                                </div>
+                                <p>REACH US AT ANY TIME</p>
+                        </div>
+                </div>
+                <p>All © Copy rights are reserved</p>
+        </footer>
+        <script src="script.js"></script>
+</body>
+
+</html>

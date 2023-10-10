@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+        <title>Salads</title>
+</head>
+
+<body>
+        <header>
+                <nav id="navbar">
+                        <h3><a href="index.html" class="text-decoration-none text-white">HGFood<small>s</small>.</a>
+                        </h3>
+                        <div id="nav-links" class="d-flex">
+                                <a href="index.html" class="nav-link">Home</a>
+                                <a href="index.html#foods" class="nav-link">Foods</a>
+                                <a href="contact.html" class="nav-link">Contact</a>
+                                <!-- <a href="about.html" class="nav-link">About</a> -->
+                        </div>
+                </nav>
+        </header>
+        <div class="container">
+                <div class="cart">
+                        <h5 class="p-1 pe-3">Cart : <span class="cartCount">0</span></h5>
+                        <button class="p-1 border-0 bg-light">
+                                <a class="text-decoration-none text-dark" href="order.html">GO TO CART</a>
+                        </button>
+                </div>
+                <div class="foods all_items">
+                        <div class="item">
+                                <img src="cucumber.jpg" alt="cucumber">
+                                <h3 class="item-name"><a href="price_card.html">Cucumber <br> Sweet and Sour</a></h3>
+                                <div class="item-price">
+                                        <h4>PRICE ~ ₹ 60</h4>
+                                        <button onclick="callCard('Cucumber',60)" class="btn">GET IT NOW</button>
+                                </div>
+                        </div>
+                        <div class="item">
+                                <img id="1" src="tomato.jpg" alt="tomato">
+                                <h3 class="item-name"><a href="#">Tomato</a></h3>
+                                <div class="item-price">
+                                        <h4>PRICE ~ ₹ 60</h4>
+                                        <button onclick="callCard('tomato',60)" class="btn">GET IT
+                                                NOW</button>
+                                </div>
+                        </div>
+                        <div class="item">
+                                <img id="2" src="mung-beans.jpg" alt="Mung-beans">
+                                <h3 class="item-name"><a href="#">Mung Beans</a></h3>
+                                <div class="item-price">
+                                        <h4>PRICE ~ ₹ 60</h4>
+                                        <button onclick="callCard('mung Beans',60)" class="btn">GET IT
+                                                NOW</button>
+                                </div>
+                        </div>
+                        <div class="item">
+                                <img id="3" src="fruit-custard.jpg" alt="fruit-custard">
+                                <h3 class="item-name"><a href="#">Fruit Custard</a></h3>
+                                <div class="item-price">
+                                        <h4>PRICE ~ ₹ 80</h4>
+                                        <button onclick="callCard('Fruit custard',80)" class="btn">GET IT
+                                                NOW</button>
+                                </div>
+                        </div>
+                        <div class="item">
+                                <img id="4" src="avacado.jpg" alt="avacado">
+                                <h3 class="item-name"><a href="#">Avacado</a></h3>
+                                <div class="item-price">
+                                        <h4>PRICE ~ ₹ 80</h4>
+                                        <button onclick="callCard('Avacado',80)" class="btn">GET IT
+                                                NOW</button>
+                                </div>
+                        </div>
+                        <div class="item">
+                                <img id="5" src="chickpea.jpg" alt="chickpea">
+                                <h3 class="item-name"><a href="#">Chickpea</a></h3>
+                                <div class="item-price">
+                                        <h4>PRICE ~ ₹ 80</h4>
+                                        <button onclick="callCard('Chickpea',80)" class="btn">GET
+                                                IT NOW</button>
+                                </div>
+                        </div>
+                        <div class="item">
+                                <img id="6" src="vegetable.jpg" alt="vegetable">
+                                <h3 class="item-name"><a href="#">Vegetable</a></h3>
+                                <div class="item-price">
+                                        <h4>PRICE ~ ₹ 60</h4>
+                                        <button onclick="callCard('Vegetable',60)" class="btn">GET IT NOW</button>
+                                </div>
+                        </div>
+                        <div class="item">
+                                <img id="6" src="mango.jpg" alt="mango">
+                                <h3 class="item-name"><a href="#">Mango</a></h3>
+                                <div class="item-price">
+                                        <h4 class="mb-2">PRICE ~ ₹ 100</h4>
+                                        <button onclick="callCard('Mango',100)" class="btn">GET IT NOW</button>
+                                </div>
+                        </div>
+                        <div class="item">
+                                <img id="7" src="grilled-paneer.jpg" alt="grilled paneer">
+                                <h3 class="item-name"><a href="#">Grilled Paneer</a></h3>
+                                <div class="item-price">
+                                        <h4>PRICE ~ ₹ 120</h4>
+                                        <button onclick="callCard('Grilled paneer',120)" class="btn">GET IT
+                                                NOW</button>
+                                </div>
+                        </div>
+                </div>
+
+                <div id="price_card">
+                        <div id="price">
+                                <h1 class="card_heading">HGFoods.</h1>
+                                <br>
+                                <br>
+                                <h1>YOUR ORDER</h1>
+                                <br>
+                                <table class="table">
+                                        <tbody>
+                                                <tr>
+                                                        <th>ITEM</th>
+                                                        <td>:</td>
+                                                        <td id="ordered_item"></td>
+                                                </tr>
+                                                <tr>
+                                                        <th>PRICE in ₹</th>
+                                                        <td>:</td>
+                                                        <td id="price_item"></td>
+                                                </tr>
+                                                <tr>
+                                                        <th>QUANTITY</th>
+                                                        <td>:</td>
+                                                        <td><input class="input" type="number" id="quantity" min="1"
+                                                                        max="10" placeholder="ENTER THE QUANTITY"
+                                                                        title="min=1, max=10"></td>
+                                                </tr>
+                                                <tr id="total_amount">
+                                                        <th>TOTAL</th>
+                                                        <td>:</td>
+                                                        <td id="total"></td>
+                                                </tr>
+                                        </tbody>
+                                </table>
+                                <div id="btn">
+                                        <button class="btn btn-light" onclick="goBack()">BACK</button>
+                                        <button class="btn btn-light" id="submit" onclick="conform()">CONFORM</button>
+                                </div>
+                        </div>
+                </div>
+        </div>
+        <footer class="footer">
+                <div class="footer_contact">
+                        <div class="footer_mail">
+                                <h3>Contact Us:</h3><br>
+                                <p>Email : gblvenkatesh@gmail.com 📧</p>
+                                <p>Phone No: 9999999999 📞</p>
+                        </div>
+                        <div class="social_media">
+                                <h3>Social Media :</h3>
+                                <div class="social_media_icons">
+                                        <a href="#"> <img src="instagram.svg" alt="instagram"></a>
+                                        <a href="#"><img src="facebook.svg" alt="facebook"></a>
+                                        <a href="#"> <img src="twitter.svg" alt="twitter"></a>
+                                        <a href="#"> <img src="youtube.svg" alt="youtube"></a>
+                                        <a href="#"> <img src="linkedin.svg" alt="linkedin"></a>
+                                </div>
+                                <p>REACH US AT ANY TIME</p>
+                        </div>
+                </div>
+                <p>All © Copy rights are reserved</p>
+        </footer>
+        <script src="script.js"></script>
+</body>
+
+</html>

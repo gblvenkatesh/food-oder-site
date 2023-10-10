@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+        <title>Fast Foods</title>
+</head>
+
+<body>
+        <header>
+                <nav id="navbar">
+                        <h3><a href="index.html" class="text-decoration-none text-white">HGFood<small>s</small>.</a>
+                        </h3>
+                        <div id="nav-links" class="d-flex">
+                                <a href="index.html" class="nav-link">Home</a>
+                                <a href="index.html#foods" class="nav-link">Foods</a>
+                                <a href="contact.html" class="nav-link">Contact</a>
+                                <!-- <a href="about.html" class="nav-link">About</a> -->
+                        </div>
+                </nav>
+        </header>
+        <div class="container">
+                <div class="cart">
+                        <h5 class="p-1 pe-3">Cart : <span class="cartCount">0</span></h5>
+                        <a class="text-decoration-none" href="order.html">
+                                <button class="p-1 border-0 bg-light text-dark">
+                                        GO TO CART
+                                </button>
+                        </a>
+                </div>
+
+                <div class="foods all_items">
+                        <div class="item">
+                                <img src="fastFood-color.jpg" alt="burger">
+                                <h3 class="item-name"><a href="price_card.html">Burger</a></h3>
+                                <div class="item-price">
+                                        <h4>PRICE ~ ₹ 60</h4>
+                                        <button onclick="callCard('Burger', 60)" class="btn">GET IT NOW</button>
+                                </div>
+                        </div>
+                        <div class="item">
+                                <img id="" src="bannerimg.jpg" alt="pizza">
+                                <h3 class="item-name"><a href="#">Pizza</a></h3>
+                                <div class="item-price">
+                                        <h4>PRICE ~ ₹ 90</h4>
+                                        <button onclick="callCard('Pizza', 90)" class="btn">GET IT NOW</button>
+                                </div>
+                        </div>
+                        <div class="item">
+                                <img id="2" src="frenchFries.jpg" alt="frenchfries">
+                                <h3 class="item-name"><a href="#">French Fries</a></h3>
+                                <div class="item-price">
+                                        <h4>PRICE ~ ₹ 50</h4>
+                                        <button onclick="callCard('French Fries', 50)" class="btn">GET IT NOW</button>
+                                </div>
+                        </div>
+                        <div class="item">
+                                <img id="3" src="samosa.jpg" alt="samosa">
+                                <h3 class="item-name"><a href="#">Samosa / 3</a></h3>
+                                <div class="item-price">
+                                        <h4>PRICE ~ ₹ 30</h4>
+                                        <button onclick="callCard('Samosa / 3',30)" class="btn">GET IT NOW</button>
+                                </div>
+                        </div>
+                        <div class="item">
+                                <img id="4" src="hot-dog.jpg" alt="hotdogs">
+                                <h3 class="item-name"><a href="#">Hot Dogs</a></h3>
+                                <div class="item-price">
+                                        <h4>PRICE ~ ₹ 60</h4>
+                                        <button onclick="callCard('Hot Dogs',60)" class="btn">GET IT NOW</button>
+                                </div>
+                        </div>
+                        <div class="item">
+                                <img id="5" src="donut.jpg" alt="donuts">
+                                <h3 class="item-name"><a href="#">Donuts / 5</a></h3>
+                                <div class="item-price">
+                                        <h4>PRICE ~ ₹ 100</h4>
+                                        <button onclick="callCard('Donuts / 5',100)" class="btn">GET IT NOW</button>
+                                </div>
+                        </div>
+                        <div class="item">
+                                <img id="6" src="sandwich.jpg" alt="sandwich">
+                                <h3 class="item-name"><a href="#">Sandwich / 3</a></h3>
+                                <div class="item-price">
+                                        <h4>PRICE ~ ₹ 60</h4>
+                                        <button onclick="callCard('Sandwich / 3',60)" class="btn">GET IT NOW</button>
+                                </div>
+                        </div>
+                        <div class="item">
+                                <img id="6" src="noodles.jpg" alt="noodles">
+                                <h3 class="item-name"><a href="#">Noodles</a></h3>
+                                <div class="item-price">
+                                        <h4 class="mb-2">PRICE ~ ₹ 80 - 120</h4>
+                                        <a href="noodles.html"><button class="btn border-light">« GO TO »</button></a>
+                                </div>
+                        </div>
+                        <div class="item">
+                                <img id="7" src="pasta.jpg" alt="pasta">
+                                <h3 class="item-name"><a href="#">Pasta</a></h3>
+                                <div class="item-price">
+                                        <h4>PRICE ~ ₹ 80</h4>
+                                        <button onclick="callCard('Pasta',80)" class="btn">GET IT NOW</button>
+                                </div>
+                        </div>
+                        <div class="item">
+                                <img id="8" src="cup_cake.jpg" alt="cupcakes">
+                                <h3 class="item-name"><a href="#">Cup Cakes / 4</a></h3>
+                                <div class="item-price">
+                                        <h4>PRICE ~ ₹ 60</h4>
+                                        <button onclick="callCard('Cup Cakes / 4',60)" class="btn">GET IT NOW</button>
+                                </div>
+                        </div>
+                        <div class="item">
+                                <img id="9" src="tacos.jpg" alt="tacos">
+                                <h3 class="item-name"><a href="#">Tacos / 3</a></h3>
+                                <div class="item-price">
+                                        <h4>PRICE ~ ₹ 60</h4>
+                                        <button onclick="callCard('Tacos / 3',60)" class="btn">GET IT NOW</button>
+                                </div>
+                        </div>
+                        <div class="item">
+                                <img id="10" src="muffins.jpg" alt="muffins">
+                                <h3 class="item-name"><a href="#">Muffins / 4</a></h3>
+                                <div class="item-price">
+                                        <h4>PRICE ~ ₹ 60</h4>
+                                        <button onclick="callCard('Muffins / 4',60)" class="btn">GET IT NOW</button>
+                                </div>
+                        </div>
+                        <div class="item">
+                                <img id="11" src="burritos.jpg" alt="burritos">
+                                <h3 class="item-name"><a href="#">Burritos / 3</a></h3>
+                                <div class="item-price">
+                                        <h4>PRICE ~ ₹ 60</h4>
+                                        <button onclick="callCard('Burritos / 3',60)" class="btn">GET IT NOW</button>
+                                </div>
+                        </div>
+                </div>
+        </div>
+        <footer class="footer">
+                <div class="footer_contact">
+                        <div class="footer_mail">
+                                <h3>Contact Us:</h3><br>
+                                <p>Email : gblvenkatesh@gmail.com 📧</p>
+                                <p>Phone No: 9999999999 📞</p>
+                        </div>
+                        <div class="social_media">
+                                <h3>Social Media :</h3>
+                                <div class="social_media_icons">
+                                        <a href="#"> <img src="instagram.svg" alt="instagram"></a>
+                                        <a href="#"><img src="facebook.svg" alt="facebook"></a>
+                                        <a href="#"> <img src="twitter.svg" alt="twitter"></a>
+                                        <a href="#"> <img src="youtube.svg" alt="youtube"></a>
+                                        <a href="#"> <img src="linkedin.svg" alt="linkedin"></a>
+                                </div>
+                                <p>REACH US AT ANY TIME</p>
+                        </div>
+                </div>
+                <p>All © Copy rights are reserved</p>
+        </footer>
+        <script src="script.js"></script>
+</body>
+
+</html>

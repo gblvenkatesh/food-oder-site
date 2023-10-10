@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+        <title>Meals</title>
+</head>
+
+<body>
+        <header>
+                <nav id="navbar">
+                        <h3><a href="index.html" class="text-decoration-none text-white">HGFood<small>s</small>.</a>
+                        </h3>
+                        <div id="nav-links" class="d-flex">
+                                <a href="index.html" class="nav-link">Home</a>
+                                <a href="index.html#foods" class="nav-link">Foods</a>
+                                <a href="contact.html" class="nav-link">Contact</a>
+                                <!-- <a href="about.html" class="nav-link">About</a> -->
+                        </div>
+                </nav>
+        </header>
+        <div class="container">
+                <div class="cart">
+                        <h5 class="p-1 pe-3">Cart : <span class="cartCount">0</span></h5>
+                        <button class="p-1 border-0 bg-light">
+                                <a class="text-decoration-none text-dark" href="order.html">GO TO CART</a>
+                        </button>
+                </div>
+                <div class="foods all_items">
+                        <div class="item">
+                                <img src="veg-biryani.jpg" alt="burger">
+                                <h3 class="item-name"><a href="price_card.html">Biryani / VEG</a></h3>
+                                <div class="item-price">
+                                        <h4>PRICE ~ ₹ 160</h4>
+                                        <button onclick="callCard('Briyani (VEG)',160)" class="btn">GET IT NOW</button>
+                                </div>
+                        </div>
+                        <div class="item">
+                                <img id="1" src="paneer-biryani.jpg" alt="pizza">
+                                <h3 class="item-name"><a href="#">Panner <br> Biryani / VEG</a></h3>
+                                <div class="item-price">
+                                        <h4>PRICE ~ ₹ 210</h4>
+                                        <button onclick="callCard('Panner Biryani (VEG)',210)" class="btn">GET IT
+                                                NOW</button>
+                                </div>
+                        </div>
+                        <div class="item">
+                                <img id="2" src="kaju-biryani.jpg" alt="frenchfries">
+                                <h3 class="item-name"><a href="#">Kaju <br> Biryani / VEG</a></h3>
+                                <div class="item-price">
+                                        <h4>PRICE ~ ₹ 230</h4>
+                                        <button onclick="callCard('kaju biryani (VEG)',230)" class="btn">GET IT
+                                                NOW</button>
+                                </div>
+                        </div>
+                        <div class="item">
+                                <img id="3" src="mushroom-biryani.jpg" alt="samosa">
+                                <h3 class="item-name"><a href="#">Mushroom <br> Biryani / VEG</a></h3>
+                                <div class="item-price">
+                                        <h4>PRICE ~ ₹ 180</h4>
+                                        <button onclick="callCard('Mushroom Biryani (VEG)',180)" class="btn">GET IT
+                                                NOW</button>
+                                </div>
+                        </div>
+                        <div class="item">
+                                <img id="4" src="egg-biryani.jpg" alt="hotdogs">
+                                <h3 class="item-name"><a href="#">Egg <br> biryani / N-VEG</a></h3>
+                                <div class="item-price">
+                                        <h4>PRICE ~ ₹ 180</h4>
+                                        <button onclick="callCard('Egg Biryani (NON-VEG)',180)" class="btn">GET IT
+                                                NOW</button>
+                                </div>
+                        </div>
+                        <div class="item">
+                                <img id="5" src="chicken-fry-biryani.jpg" alt="donuts">
+                                <h3 class="item-name"><a href="#">Chicken fry <br> Biryani / N-VEG</a></h3>
+                                <div class="item-price">
+                                        <h4>PRICE ~ ₹ 220</h4>
+                                        <button onclick="callCard('Chicken fry biryani / NON-VEG',220)" class="btn">GET
+                                                IT NOW</button>
+                                </div>
+                        </div>
+                        <div class="item">
+                                <img id="6" src="veg-fried-rice.jpg" alt="veg-fried-rice">
+                                <h3 class="item-name"><a href="#">Fried rice / VEG</a></h3>
+                                <div class="item-price">
+                                        <h4>PRICE ~ ₹ 150</h4>
+                                        <button onclick="callCard('Veg Fried Rice',150)" class="btn">GET IT NOW</button>
+                                </div>
+                        </div>
+                        <div class="item">
+                                <img id="6" src="egg-fried-rice.jpg" alt="egg-fried-rice">
+                                <h3 class="item-name"><a href="#">Egg Fried rice</a></h3>
+                                <div class="item-price">
+                                        <h4 class="mb-2">PRICE ~ ₹ 180</h4>
+                                        <button onclick="callCard('Egg Fried Rice',180)" class="btn">GET IT NOW</button>
+                                </div>
+                        </div>
+                        <div class="item">
+                                <img id="7" src="chicken-fried-rice.jpg" alt="chicken-fried-rice">
+                                <h3 class="item-name"><a href="#">Chicken fried rice</a></h3>
+                                <div class="item-price">
+                                        <h4>PRICE ~ ₹ 220</h4>
+                                        <button onclick="callCard('chicken-fried-rice',220)" class="btn">GET IT NOW</button>
+                                </div>
+                        </div>
+                </div>
+        </div>
+        <footer class="footer">
+                <div class="footer_contact">
+                        <div class="footer_mail">
+                                <h3>Contact Us:</h3><br>
+                                <p>Email : gblvenkatesh@gmail.com 📧</p>
+                                <p>Phone No: 9999999999 📞</p>
+                        </div>
+                        <div class="social_media">
+                                <h3>Social Media :</h3>
+                                <div class="social_media_icons">
+                                        <a href="#"> <img src="instagram.svg" alt="instagram"></a>
+                                        <a href="#"><img src="facebook.svg" alt="facebook"></a>
+                                        <a href="#"> <img src="twitter.svg" alt="twitter"></a>
+                                        <a href="#"> <img src="youtube.svg" alt="youtube"></a>
+                                        <a href="#"> <img src="linkedin.svg" alt="linkedin"></a>
+                                </div>
+                                <p>REACH US AT ANY TIME</p>
+                        </div>
+                </div>
+                <p>All © Copy rights are reserved</p>
+        </footer>
+        <script src="script.js"></script>
+</body>
+
+</html>
